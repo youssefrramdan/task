@@ -1,1 +1,21 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: "git hub action"
+      run: pwd
+
+    - name: 'testing github'
+      run: echo youssef
+
+
+    
 
