@@ -16,6 +16,11 @@ jobs:
     - name: 'testing github'
       run: echo youssef
 
-
+	
     - uses: action/checkout@v3
-     
+
+     - name: Login to Docker Hub
+       run:  docker login -u yousseframadan676
+  --password dckr_pat_1oAouIE_QMTZYDsm8X3tSzDC-nU
+
+    
