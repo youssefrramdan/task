@@ -10,17 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: "git hub action"
-      run: pwd
+      - name: "git hub action"
+        run: pwd
 
-    - name: 'testing github'
-      run: echo youssef
+      - name: 'testing github'
+        run: echo youssef
 
-	
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-     - name: Login to Docker Hub
-       run:  docker login -u yousseframadan676
-  --password dckr_pat_1oAouIE_QMTZYDsm8X3tSzDC-nU
-
-    
+      - name: Login to Docker Hub
+        run: docker login -u yousseframadan676 --password dckr_pat_1oAouIE_QMTZYDsm8X3tSzDC-nU
